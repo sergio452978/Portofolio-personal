@@ -1,0 +1,59 @@
+---
+import Github from  "../components/icons/Github.astro";
+import SocialPill from '../components/SocialPill.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
+import Mail from '../components/icons/Mail.astro';
+import YoutubeIcon from "../components/icons/Youtube.astro";
+import Badge from '../components/Badge.astro';
+import Back from "../images/gradient.astro";
+---
+
+<div>
+<Back/>
+
+</div>
+<div class="max-w-full">
+    <div class="flex gap-4 justify-center items-center mb-4">
+<a class="flex justify-center items-center mb-4 "
+					href="https://linkedin.com/"
+					target="_blank"
+					rel="noopener"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+</div>
+			<h1 class="text-white text-5xl flex justify-center items-center font-bold gap-x-4 pb-4">
+				<!-- <img 
+				class="rounded-full w-24 h-24 mb-4 " 
+				src="https://media.licdn.com/dms/image/v2/C4E03AQGy8qcDWPyuXA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1616146570873?e=2147483647&v=beta&t=SnFa0n5iHBCBSBNdeaQtZUrNKB3yq-Mn8TK_WSOb2ZM" 
+				alt="sergio photo"/> -->
+				
+				Hola, soy Sergio
+				
+			</h1>
+			<h2 class="text-xl opacity-70 text-center">
+				<span>+5 años de experiencia en el desarrollo de aplicaciones multiplataforma y dessarrollo web.</span><br>
+				<span>Me encanta crear contenido contribuyendo con la comunidad.</span><br>	
+				<span>De Zaragoza, España.</span>
+			</h2>
+			
+			<nav class="flex justify-center items-center gap-x-4 mt-8">
+				
+                <SocialPill href="">
+					<YoutubeIcon class="w-6 h-6"/>
+					Youtube
+				</SocialPill>
+				<SocialPill href="">
+					<Github class="w-6 h-6"/>
+					GitHub
+				</SocialPill>
+				<SocialPill href="">
+					<Linkedin class="w-6 h-6"/>
+					Linkedin
+				</SocialPill>
+				<SocialPill href="mailto:sergio45297@hotmail.es">
+					<Mail class="w-6 h-6"/>
+					Correo
+				</SocialPill>
+			</nav>
+</div>            

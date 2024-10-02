@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from "../components/SectionContainer.astro";
+import TitleSection from "../components/TitleSection.astro";
+import Briefcase from "../components/icons/Briefcase.astro"
+import AboutMe from "../components/AboutMe.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Experience from "../components/Experience.astro"
+import ProfileCheck from "../components/icons/ProfileCheck.astro"
+import Projects from "../components/Projects.astro"
+import SectionOne from "../components/SectionOne.astro";
+import Background from "../images/gradient.astro";
+
+---
+
+<Layout title="Porfolio de sergio - Desarrollador y Programador Web con 5 años de experiencia"
+	description='fdfd'
+>
+	<main class="px-4">
+
+		<SectionContainer id="inicio" class="pt-72 max-lg:pt-60 max-lg:pb-40 pb-80">
+		<SectionOne>
+		</slot></SectionOne>
+		</SectionContainer>
+
+		
+		<div class="space-y-24">
+			<SectionContainer id="experiencia">
+				<TitleSection>
+				  <Briefcase class="size-7" />
+				  Experiencia
+				</TitleSection>
+				<Experience />
+			  </SectionContainer>
+			
+		
+			<SectionContainer id="proyectos">
+			  <TitleSection>
+				<CodeIcon class="size-7" />
+				Proyectos
+			  </TitleSection>
+			  <Projects />
+			</SectionContainer>
+		
+			<SectionContainer id="sobre-mi">
+			  <TitleSection>
+				<ProfileCheck class="size-8" />
+				Sobre mí
+			  </TitleSection>
+			  <AboutMe />
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>
+
+
